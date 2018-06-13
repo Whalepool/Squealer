@@ -1,0 +1,23 @@
+##################################
+# Telegram
+##################################
+
+# Telegram bot token supplied by the botfather
+TELEGRAM_BOT_TOKEN: "xxxxxxxxxxxxxxxxxx"
+
+# Telegram chat id of your admin room
+ADMIN_CHAT_ID: 123456789
+
+
+##################################
+# Rabbitmq 
+##################################
+
+RABBIT_USER: "xxxxxxxxxxxxxxxxxx"
+RABBIT_PASSWORD: "xxxxxxxxxxxxxxxxxx"
+RABBIT_IP: "127.0.0.1"
+RABBIT_PORT: "1234"
+RABBIT_VHOST: "myvhost"
+RABBIT_TIMEOUT: 3000
+RABBIT_EXCHANGE: "squealer"
+RABBIT_ROUTING_KEY: "squealer_tgchatmsgs" 

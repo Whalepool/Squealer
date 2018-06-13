@@ -1,0 +1,4 @@
+python_telegram_bot==9.0.0
+pika==0.11.2
+telegram==0.0.1
+PyYAML==3.12
