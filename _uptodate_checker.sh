@@ -1,19 +1,5 @@
-#!/bin/bash  
-msg_squealer() { 
-	SQUEALER_DIR=$(find /* -name squealer_pub.py -exec dirname {} \; 2>&1 | grep -v "Permission denied" )
-
-	if [[ -n $SQUEALER_DIR  ]]; then
-	    echo "Squealer is present on the server at $SQUEALER_DIR, msging $1"
-
-	    EXECUTE='python3.6 '"$SQUEALER_DIR"'/squealer_pub.py --msg="$1" '
-	    echo "executing: $EXECUTE"
-	    eval $EXECUTE
-
-	else
-		echo 'no'
-	fi
-}
-
+#!/bin/bash 
+source utils/bash_includes.sh 
 
 git remote -v update
 
